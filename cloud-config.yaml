@@ -7,7 +7,7 @@ users:
     shell: /bin/bash
     sudo: ["ALL=(ALL) NOPASSWD:ALL"]
     ssh-authorized-keys:
-      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFmEsX5x1iSpAGXobllNJMA9Fh55RuDuFPx5SfhtXq6F davidnguyenantran@gmail.com
+      - ssh-ed25519 <ssh key here> <personal email here>
 
 packages:
   - ripgrep
@@ -22,4 +22,3 @@ runcmd:
   - systemctl restart systemd-journald
   - sudo ufw allow SSH
   - sudo ufw allow http
-  - sudo ufw enable

@@ -6,10 +6,27 @@ The included backend server runs on port 8080, 127.0.0.1:8080
 
 ## Included material
 
-- backend binary, hello-server
-
-- frontend, index.html
-- nginx configuration file, hello.conf
-- service file for backend, hello-server.service
-- config for setting up servers, cloud-config.yml
 - example curl commands for testing your server, curl.md
+
+# File Directories for server setup
+
+## /var/www/backend
+
+- backend binary, **hello-server**
+
+## /var/www/my-site
+
+- frontend, **index.html**
+
+## /etc/nginx/sites-available
+
+- nginx configuration file, **hello.conf**
+- (also symbolic link to /etc/nginx/sites-enabled)
+
+## /etc/systemd/system
+
+- service file for backend, **hello-server.service**
+
+## Digital Ocean Initialization Script
+
+- config for setting up servers, **cloud-config.yml**
